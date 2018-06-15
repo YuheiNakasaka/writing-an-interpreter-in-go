@@ -29,7 +29,7 @@ type Boolean struct {
 func (b *Boolean) Type() ObjectType { return BOOLEAN_OBJ }
 func (b *Boolean) Inspect() string  { return fmt.Sprintf("%t", b.Value) }
 
-type NULL struct{}
+type Null struct{}
 
-func (n *NULL) Type() ObjectType { return NULL_OBJ }
-func (n *NULL) Inspect() string  { return "null" }
+func (n *Null) Type() ObjectType { return NULL_OBJ }
+func (n *Null) Inspect() string  { return "null" }
